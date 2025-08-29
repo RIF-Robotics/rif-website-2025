@@ -1,0 +1,17 @@
+[
+    {
+        "name": "LiknedIn",
+        "link": "https://www.linkedin.com/company/rifrobotics/",
+        "image": "social/twitter.svg"
+    },
+    {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/rif_robotics/",
+        "image": "social/github.svg"
+    },
+    {
+        "name": "YouTube",
+        "link": "https://www.youtube.com/@rifrobotics5274",
+        "image": "social/twitter.svg"
+    }
+]

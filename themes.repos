@@ -1,0 +1,5 @@
+repositories:
+  hugo-hero-theme:
+    type: git
+    url: git@github.com:zerostaticthemes/hugo-hero-theme.git
+    version: master

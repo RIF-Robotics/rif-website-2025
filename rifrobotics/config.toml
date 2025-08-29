@@ -21,7 +21,7 @@ theme = "hugo-hero-theme"
     alt = "Hugo Hero"
 
   [params.homepage_meta_tags]
-    meta_description = "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site."
+    meta_description = "RIF Robotics is developing technology for hospitals of the future."
     meta_og_title = "RIF Robotics"
     meta_og_type = "website"
     # meta_og_url = "https://hugo-hero.netlify.app"

@@ -5,95 +5,72 @@ Hero is a multi-page business theme with fullscreen hero images and fullwidth se
 [Live Demo](https://hugo-hero.netlify.app/) |
 [Zerostatic Themes](https://www.zerostatic.io/theme/hugo-hero/)
 
-![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png)
-
-## Features
-
-**Content Types**
-- Services (Markdown)
-- Work/Portfolio (Markdown)
-- Features (Data)
-- About (Markdown, Single Page, Shortcodes)
-- Homepage (Markdown, Single Page, multiple .md files in one layout)
-
-**Content Management**
-- This theme's content is now all editable via markdown files.
-- Includes examples where multiple .md files are sourced in a single layout to create fullwidth sections that have different locations in the HTML.
-- The "Home" page uses multiple markdown files for the different homepage sections. It uses **headless bundles**.
-- The "About Us" page uses multiple markdown files for its different sections. It uses **leaf bundles** and **shortcodes**.
-- "Services" & "Work" use markdown files with layouts for list, single and summary views.
-
-**Features**
-- Full-width responsive design
-- Full-width/full-height hero image partial
-
-**SCSS**
-- SCSS (Hugo Pipes)
-- Responsive design
-- Bootstrap 4 grid and media queries
-- The rest of the Bootstrap library is commented out by default but is ready to be @imported in the `style.scss`
-
-**Speed**
-- 100/100 Google Lighthouse speed score
-- Vanilla JS only
-- Minified CSS under 20KB
-- Minified JS under 20KB
-
-**SEO**
-- 100/100 Google Lighthouse SEO score
-- Configure Google Analytics in `config.toml`
-- Configure Google Analytics using env variable `HUGO_GOOGLE_ANALYTICS_ID` compatible with Netlify.
-- Configure meta tags and OG meta tags for the homepage in `config.toml`
-- Semantic HTML document structure
-
-**Menu**
-- Responsive menu managed in `config.toml`
-- Animated hamburger menu on mobile
-
-**Content**
-- Robust example content included
-- Royalty free illustrations included
+<!-- ![Hugo Hero Theme screenshot](https://www.zerostatic.io/theme/hugo-hero/hugo-hero-screenshot.png) -->
 
 ## Installation
 
 **1. Install Hugo**
 
-To use this theme you will first need to have Hugo installed. Please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
+To use this theme you will first need to have Hugo installed. Please follow the
+official [installation
+guide](https://gohugo.io/getting-started/installing/).
 
 ⚠️ **Note:** Check your Hugo version - **Hugo Extended** is required!
 
-This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets which means if you not using the Hugo extended version this theme will not work. To check your version of Hugo, run  `hugo version`. Make sure you see __/extended__ after the version number, for example _Hugo Static Site Generator v0.82.0/extended darwin/amd64 BuildDate: unknown_ You do not need to use version v0.82.0 specifically, it just needs to have the _/extended_ part.
+⚠️ **Note:** Do not use apt-get for Debian systems since it hasn't been updated.
+
+Instead, download the latest extended version from
+[here](https://github.com/gohugoio/hugo/releases/tag/v0.149.0). Download file
+`hugo_extended_0.149.0_linux-amd64.deb` and execute:
+
+    sudo dpkg -i hugo_extended_0.149.0_linux-amd64.deb
+
+This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to
+compile SCSS and minify assets which means if you not using the Hugo extended
+version this theme will not work. To check your version of Hugo, run `hugo
+version`. Make sure you see __/extended__ after the version number, for example
+_Hugo Static Site Generator v0.82.0/extended darwin/amd64 BuildDate: unknown_
+You do not need to use version v0.82.0 specifically, it just needs to have the
+_/extended_ part.
 
 **2. Create a new Hugo site**
 
-This will create a fresh Hugo site in the folder `mynewsite`.
+This will create a fresh Hugo site in the folder `rifrobotics`.
 
 ```
-hugo new site mynewsite
+hugo new site rifrobotics
 ```
 
 **3. Install the theme**
 
-Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-hero-theme`
+Use `vcs` to clone this theme into the sites themes folder
+`rifrobotics/themes`. You should end up with the following folder structure
+`rifrobotics/themes/hugo-hero-theme`
 
 ```
-cd mynewsite
-git clone https://github.com/zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme
+cd /path/to/rif-website-2025
+vcs import rifrobotics/themes/ < themes.repos
 ```
+<!-- git clone git@github.com:zerostaticthemes/hugo-hero-theme.git themes/hugo-hero-theme -->
 
 **4. Copy the example content**
 
-Copy the entire contents of the `mynewsite/themes/hugo-hero-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
+Copy the entire contents of the
+`rifrobotics/themes/hugo-hero-theme/exampleSite/` folder to root folder of your
+Hugo site, ie `rifrobotics/`. To copy the files using terminal, make sure you
+are still in the projects root, ie the `rifrobotics` folder.
 
 ```
+cd /path/to/rif-website-2025/rifrobotics
 cp -a themes/hugo-hero-theme/exampleSite/. .
+cp -a themes/hugo-hero-theme/layouts .
 ```
 
-**65. Run Hugo**
+**5. Run Hugo**
 
 After installing the theme for the first time, generate the Hugo site.
 
-You run this command from the root folder of your Hugo site ie `mynewsite/`
+You run this command from the root folder of your Hugo site ie `rifrobotics/`
 
 ```
 hugo
@@ -105,20 +82,31 @@ For local development run Hugo's built-in local server.
 hugo server
 ```
 
-Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
+Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your
+browser.
 
 ## Deployment
-### Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/hugo-hero-theme)
+Coming soon ...
 
-This theme includes a `netlify.toml` which is [configured to deploy to Netlify](https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508) from the `exampleSite` folder. If you have installed this theme into a new Hugo site and the exampleSite folder was copied or removed, you should delete the `netlify.toml` file.
+<!-- ### Netlify -->
+
+<!-- [![Deploy to -->
+<!-- Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/hugo-hero-theme) -->
+
+<!-- This theme includes a `netlify.toml` which is [configured to deploy to -->
+<!-- Netlify](https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508) from -->
+<!-- the `exampleSite` folder. If you have installed this theme into a new Hugo site -->
+<!-- and the exampleSite folder was copied or removed, you should delete the -->
+<!-- `netlify.toml` file. -->
 
 ## Configuring Theme
 
 ### Homepage meta tags
 
-Often a homepage requires special meta tags such as a meta description or og meta data for twitter, facebook etc. You can configure these values in the `config.toml`
+Often a homepage requires special meta tags such as a meta description or og
+meta data for twitter, facebook etc. You can configure these values in the
+`config.toml`
 
 ```toml
 # config.toml
@@ -153,21 +141,21 @@ You can set meta tags on a per template basis using a block. For example, you mi
 ...
 ```
 
-### Google Analytics
+<!-- ### Google Analytics -->
 
-Add your google analytics ID to the `config.toml`
+<!-- Add your google analytics ID to the `config.toml` -->
 
-```toml
-# config.toml
-[params]
-  google_analytics_id="UA-132398315-1"
-```
+<!-- ```toml -->
+<!-- # config.toml -->
+<!-- [params] -->
+<!--   google_analytics_id="UA-132398315-1" -->
+<!-- ``` -->
 
 ### Menu
 
 You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 
-## License
+## License (from author)
 
 - Don't create ports or new versions of this theme without asking me
 - You can't re-distribute or re-sell this theme as your own template
@@ -189,6 +177,5 @@ You can edit and add main menu links in the `config.toml` under `[[menu.main]]`
 - [Hugo Lever](https://www.zerostatic.io/theme/hugo-lever/) - Premium personal / bio theme
 - [Hugo Shard](https://www.zerostatic.io/theme/hugo-lever/) - Premium SAAS / landing page theme
 
-**Find hundreds more Hugo themes on Built At Lightspeed**
-
-[<img alt="Built At Lightspeed Hugo themes directory screenshot" width="400px" src="https://www.zerostatic.io/images/builtatlightspeed-hugo-themes.jpg" />](https://builtatlightspeed.com/category/hugo)
+**Find hundreds more Hugo themes on [Built At
+Lightspeed](https://builtatlightspeed.com/category/hugo)**

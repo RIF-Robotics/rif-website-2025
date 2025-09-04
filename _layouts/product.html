@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="section-pad">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.video %}
+    <video autoplay muted loop playsinline>
+      <source src="{{ page.video | relative_url }}" type="video/mp4">
+    </video>
+    {% endif %}
+    {{ content }}
+  </div>
+</section>

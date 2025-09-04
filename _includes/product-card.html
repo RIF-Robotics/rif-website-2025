@@ -1,0 +1,8 @@
+<div class="card h-100 shadow-sm">
+  <img src="{{ include.image | relative_url }}" class="card-img-top" alt="{{ include.title }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ include.title }}</h5>
+    <p class="card-text text-muted">{{ include.tagline }}</p>
+    <a href="{{ include.url | relative_url }}" class="btn btn-outline-primary">View product</a>
+  </div>
+</div>

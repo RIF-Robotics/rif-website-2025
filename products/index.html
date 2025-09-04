@@ -1,0 +1,17 @@
+---
+layout: page
+title: Products
+nav_active: Products
+---
+<div class="row g-4">
+  {% for product in site.products %}
+  <div class="col-md-4">
+    {% include product-card.html
+      title=product.title
+      tagline=product.tagline
+      image=product.image
+      url=product.url
+    %}
+  </div>
+  {% endfor %}
+</div>

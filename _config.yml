@@ -1,0 +1,30 @@
+title: RIF Robotics
+description: Cutting-edge technology for sterile processing
+url: "rifrobotics.com"
+baseurl: ""
+
+markdown: kramdown
+theme: null
+
+collections:
+  products:
+    output: true
+    permalink: /products/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "products"
+    values:
+      layout: product
+      nav_active: products
+
+nav:
+  - title: Products
+    url: /products/
+  - title: Our Team
+    url: /team.html
+  - title: Contact
+    url: /contact.html
+  - title: Press
+    url: /press.html

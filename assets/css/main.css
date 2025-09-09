@@ -18,3 +18,41 @@ footer {
     background:#272727;
     color:#fff;
 }
+
+.problems-section {
+    position: relative;
+    min-height: 65vh; /* taller vertical space */
+    /* background: rgba(0, 0, 0, 0.7); /\* dark overlay for readability *\/ */
+    background-image: url("/assets/images/pacr_rendered_white.png");
+    background-size: cover;
+    background-position-x: 300px;
+    background-position-y: -215px;
+    background-repeat: no-repeat;
+}
+
+.problems-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(0, 0, 0, 0.5); /\* subtle transparent overlay *\/ */
+    z-index: 0;
+}
+
+.problems-section .container {
+    position: relative;
+    z-index: 1; /* keeps text above overlay */
+    text-align: left;
+    left: -300px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}

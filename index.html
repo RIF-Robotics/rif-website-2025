@@ -11,12 +11,41 @@ title: Home
     </video>
   </div>
 </section>
-<section class="section-pad bg-subtle text-center">
-  <h2>Why Hospitals Need This</h2>
-  <p class="lead">Quick stats and convincing points go here.</p>
+
+<section class="problems-section text-center d-flex align-items-center py-5">
+  <div class="container">
+    <h1 class="mb-5">The Challenges Sterile Processing Faces</h1>
+    <div class="row">
+      <!-- Stat Block 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="stat-box p-4">
+          <h1 class="display-4 text-primary fw-bold">19.3%</h1>
+          <p class="mt-2">Percentage of surgeries with delay due to SPD errors
+          [<a href="https://bmcsurg.biomedcentral.com/articles/10.1186/s12893-024-02407-1/tables/8">source</a>]</p>
+        </div>
+      </div>
+      <!-- Stat Block 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="stat-box p-4">
+          <h1 class="display-4 text-primary fw-bold">$153</h1>
+          <p class="mt-2">Operating room cost per minute
+          [<a href="https://bmcsurg.biomedcentral.com/articles/10.1186/s12893-024-02407-1/tables/8">source</a>]</p>
+        </div>
+      </div>
+      <!-- Stat Block 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="stat-box p-4">
+          <h1 class="display-4 text-primary fw-bold">$25B</h1>
+          <p class="mt-2">Cost of OR delays due to SPD errors (annually, US)
+          [<a href="https://www.linkedin.com/pulse/49-billionyear-waste-healthcare-spending-we-can-solve-peter-nichol/">source</a>]</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<section class="section-pad">
-  <h2>Featured Products</h2>
+
+<section class="section-pad text-center">
+  <h1 class="mb-5">Featured Products</h1>
   <div class="row g-4">
     {% assign featured = site.products | slice: 0, 3 %}
     {% for product in featured %}

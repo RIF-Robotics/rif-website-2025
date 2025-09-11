@@ -25,10 +25,10 @@
     </button>
 
     <!-- Nav Links -->
-    <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
-      <ul class="navbar-nav"> <!-- ms-auto -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
         {% for item in site.nav %}
-        <li class="nav-item"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        <li class="nav-item ms-4"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
         {% endfor %}
       </ul>
     </div>

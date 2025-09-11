@@ -9,34 +9,50 @@ footer {
     color:#fff;
 }
 
+/* Make navbar links bigger and bolder */
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    margin-left: 100px;
+    max-height: 70px; /* adjust logo size */
+}
+
+.navbar-nav {
+    margin-right: 100px; /* ensure no extra spacing */
+}
+
 .section-pad {
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
 
 .hero-video {
-  position: relative;
-  height: 100vh; /* fullscreen */
-  overflow: hidden;
+    position: relative;
+    height: 100vh; /* fullscreen */
+    overflow: hidden;
 }
 
 .hero-bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -2;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
 
 .hero-video .overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
-  z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* semi-transparent overlay */
+    z-index: -1;
 }
 
 .hero-content {

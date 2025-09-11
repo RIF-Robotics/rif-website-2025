@@ -1,8 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-  <div class="container">
-    <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom"> -->
+<!--   <div class="container"> -->
+<!--     <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a> -->
+<!--     <div class="collapse navbar-collapse"> -->
+<!--       <ul class="navbar-nav ms-auto"> -->
+<!--         {% for item in site.nav %} -->
+<!--         <li class="nav-item"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li> -->
+<!--         {% endfor %} -->
+<!--       </ul> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </nav> -->
+
+<nav class="navbar navbar-expand-lg py-3 navbar-light bg-white border-bottom"> <!-- navbar-dark bg-dark -->
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand ms-3" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/RIF_black.png' | relative_url }}" alt="RIF Robotics Logo" height="70">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse justify-content-end me-3" id="navbarNav">
+      <ul class="navbar-nav"> <!-- ms-auto -->
         {% for item in site.nav %}
         <li class="nav-item"><a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
         {% endfor %}

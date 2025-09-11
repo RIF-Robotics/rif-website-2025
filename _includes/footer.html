@@ -1,4 +1,26 @@
-<footer class="text-center py-4 bg-dark text-white">
-  <p>© {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+    <!-- Left: Logo + Contact -->
+    <div class="text-center text-md-start mb-3 mb-md-0">
+      <img src="{{ '/assets/images/RIF_white.png' | relative_url }}" alt="RIF Robotics Logo" height="50" class="mb-2">
+      <p class="mb-0">info@rifrobotics.com</p>
+    </div>
+
+    <p class="text-center justify-content-center">
+      © {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
+    </p>
+
+    <!-- Right: Social Links -->
+    <div class="text-center text-md-end">
+      <div class="d-flex justify-content-center justify-content-md-end">
+        {% for item in site.socials %}
+        <a href="{{ item.url }}" class="text-light ms-4" aria-label="{{ item.name }}">
+          <i class="fab {{ item.class }} fa-lg"></i>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

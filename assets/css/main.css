@@ -9,6 +9,18 @@ footer {
     color:#fff;
 }
 
+footer img {
+  max-height: 50px;
+}
+
+footer a {
+    font-size: 22px;
+}
+
+footer a:hover {
+  color: #0d6efd !important; /* Bootstrap primary blue on hover */
+}
+
 /* Make navbar links bigger and bolder */
 .navbar-nav .nav-link {
     font-size: 1.5rem;
@@ -17,12 +29,12 @@ footer {
 }
 
 .navbar-brand img {
-    margin-left: 100px;
+    margin-left: 150px;
     max-height: 70px; /* adjust logo size */
 }
 
 .navbar-nav {
-    margin-right: 100px; /* ensure no extra spacing */
+    margin-right: 150px; /* ensure no extra spacing */
 }
 
 .section-pad {

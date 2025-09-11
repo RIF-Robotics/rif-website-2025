@@ -28,3 +28,14 @@ nav:
     url: /contact.html
   - title: Press
     url: /press.html
+
+socials:
+  - name: LinkedIn
+    url: https://www.linkedin.com/company/rifrobotics/
+    class: fa-linkedin
+  - name: Instagram
+    url: https://www.instagram.com/rif_robotics/
+    class: fa-instagram
+  - name: YouTube
+    url: https://www.youtube.com/@rifrobotics5274
+    class: fa-youtube
